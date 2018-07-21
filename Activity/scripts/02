@@ -1,0 +1,3 @@
+apt-get update >> /var/log/update_script.log >> ~/apt_update.sh
+apt-get dist-upgrade >> var/log/update_script.log >> ~/apt_update.sh
+0 4 * * 1 sh ~apt_update.sh' >> etc/crontab

@@ -1,0 +1,16 @@
+echo "00 0 * * * /root/04" >> /etc/crontab
+
+sum1=$(cat /root/crontabsum)
+sum2=$(md5sum /etc/crontab | cut -d " " -f 1)
+
+if [ "sum1 != sum2" ]
+then
+	md5sum /root/tmp.txt | cut -d " " -f 1 > /root/crontabsum
+	echo "crontab changed" | mail -s "crontab changed" root@localhost
+fi
+
+# add this file to the crontab (cron table) to check repeteadly
+# Two variables from the files you need to differ in this case the crontab with its etc that is no hashed but we hashed it to compare
+# comparison of files
+# md5sum hashing is added to the file you put 
+# you are sending a main with (-s) subject "contrab changed" to the root@localhost with the body contrab changed

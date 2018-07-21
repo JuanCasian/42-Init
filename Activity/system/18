@@ -1,0 +1,5 @@
+sudo iptables -A INPUT -s 10.0.0.0/8 -j ACCEPT
+
+# -A INPUT part of the command that tells iptables we want to add a new rule
+#  - s stands for source that is why we add that ip after 
+# - j  specifies the target of the rule
