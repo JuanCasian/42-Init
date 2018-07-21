@@ -1,0 +1,5 @@
+nat (10.90.1.11)
+
+# Nat converts your local address into a public one, 
+# you can find the nat in line 3 of treaceroute slash16.org
+

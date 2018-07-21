@@ -1,0 +1,2 @@
+ps -ef | grep sshd 
+# ps -ef shows all the current process and grep gives you only the sshd ones

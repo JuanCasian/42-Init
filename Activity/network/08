@@ -1,0 +1,4 @@
+# To find this use the following command:
+# whois 143.204.132.231 | grep "OrgName"
+
+OrgName:        Amazon Technologies Inc.

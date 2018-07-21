@@ -1,0 +1,5 @@
+# two ways to do it:
+# 1. dig +noall +answer -x 10.51.1.81
+# 2. host 10.51.1.81
+
+81.1.51.10.in-addr.arpa. 86400	IN	PTR	dpm-master.42.us.org.
